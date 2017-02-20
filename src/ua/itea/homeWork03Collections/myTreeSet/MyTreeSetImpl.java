@@ -81,6 +81,7 @@ public class MyTreeSetImpl<E> implements MyTreeSortedSet<E>, Iterable<E>{
         Node(E element){
             this.element = element;
         }
+
     }
 
     @Override
@@ -127,6 +128,18 @@ public class MyTreeSetImpl<E> implements MyTreeSortedSet<E>, Iterable<E>{
         return node;
     }
 
+    public void inorderTreeWalk(Node<E> node){
+        if (node != null) {
+            inorderTreeWalk(node.left);
+            System.out.println(node.element.toString());
+            inorderTreeWalk(node.right);
+        }
+    }
+
+    public void showAllElements(){
+        inorderTreeWalk(root);
+    }
+
     public E getFirsElement(){
         return getFirstNode().element;
     }
@@ -135,12 +148,11 @@ public class MyTreeSetImpl<E> implements MyTreeSortedSet<E>, Iterable<E>{
         return getLastNode().element;
     }
 
-    public String toString(){
-        String allElements = "hi";
-        Node<E> currentNode = getFirstNode();
-        while (comparator.compare(currentNode.element,getLastNode().element) != 0){
 
-        }
+    //TODO make it work
+    public String toString(){
+        String allElements = "[";
+
         return allElements;
     }
 

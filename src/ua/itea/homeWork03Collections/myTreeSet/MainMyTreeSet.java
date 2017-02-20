@@ -6,6 +6,7 @@ import java.util.Comparator;
  * @author vitaliy
  * @version 1.0
  * @since 2/8/17
+ *
  */
 public class MainMyTreeSet {
 
@@ -31,11 +32,8 @@ public class MainMyTreeSet {
         mts.add("Dimon");
         mts.add("Ann");
         mts.add("Enn");
-        //mts.add("Enn");
-        System.out.println(mts.getFirsElement());
-        System.out.println(mts.getLastElement());
         System.out.println(mts.size());
-        System.out.println(mts);
+        mts.showAllElements();
 //        mts.remove("Petya");
 //        System.out.println(mts);
 //        Iterator iterator = mts.iterator();
