@@ -16,6 +16,15 @@ public class Account {
         return person;
     }
 
+    public void putMoney(int money){
+        balance += money;
+    }
+
+    public int takeMoney(int money){
+        balance -= money;
+        return money;
+    }
+
     public long getBalance() {
         return balance;
     }

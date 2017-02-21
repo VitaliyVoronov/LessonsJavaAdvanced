@@ -7,8 +7,11 @@ package ua.itea.testTasks;
  */
 public class Main {
     public static void main(String args[]) {
-        byte b = 0;
-        while (++b > 0);
-        System.out.println(b);
+        char c = '\u0031';
+        char b = 49;
+        char g = '1';
+        System.out.println((int) c);
+        System.out.println((int) b);
+        System.out.println((int) g);
     }
 }
