@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
+ *
+ *
  * @author vitaliy
  * @version 1.0
  * @since 1/28/17
@@ -38,7 +40,8 @@ public class RandomInputStream extends InputStream {
     public int available(){
         return streamLength - pos;
     }
-    // TODO limit байтов которвый необходимо читать, если чиать нечего вернуть -1
+
+    // TODO limit байтов который необходимо читать, если читать нечего вернуть -1
     public synchronized void mark(int limit){
         mark = limit;
     }
