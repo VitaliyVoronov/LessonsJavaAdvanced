@@ -87,12 +87,6 @@ public class ListWithIterator {
 //        }
 //        listIterator.add(temp);
 //        System.out.println(list);
-
-
-
-
-
-
-
+        
         }
 }

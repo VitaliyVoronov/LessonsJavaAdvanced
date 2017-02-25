@@ -26,12 +26,12 @@ public class MainMyTreeSet {
                 }
             }
         });
-        System.out.println(mts.add("Pe"));
-        System.out.println(mts.add("Vasyaj"));
+        mts.add("Pe");
+        mts.add("Vasyaj");
         mts.add("Kolyanich");
         mts.add("Dimon");
         mts.add("Ann");
-        mts.add("Enn");
+        //mts.add("Enn");
         System.out.println(mts.size());
         mts.showAllElements();
 //        mts.remove("Petya");
