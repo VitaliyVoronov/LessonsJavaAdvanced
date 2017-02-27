@@ -5,6 +5,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author vitaliy
@@ -51,20 +54,15 @@ public class Controller implements Observable {
     }
 
     private void writeThread(){
-        new Thread(new Runnable() {
+        ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
+        service.scheduleAtFixedRate(new Runnable() {
+
             @Override
             public void run() {
                 SimpleDateFormat dateFormat = new SimpleDateFormat("hh:mm:ss");
-                while (true) {
                     System.out.println("Time: " + dateFormat.format(new Date()));
                     System.out.println("Enter you command:");
-                    try {
-                        Thread.sleep(4000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
             }
-        }).start();
+        }, 0, 4, TimeUnit.SECONDS);
     }
 }
