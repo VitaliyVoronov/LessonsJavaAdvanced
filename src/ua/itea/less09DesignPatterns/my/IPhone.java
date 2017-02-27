@@ -1,6 +1,6 @@
-package ua.itea.less09.my;
+package ua.itea.less09DesignPatterns.my;
 
-import ua.itea.less09.external.IPhonePhoneFunction;
+import ua.itea.less09DesignPatterns.external.IPhonePhoneFunction;
 
 /**
  * @author vitaliy

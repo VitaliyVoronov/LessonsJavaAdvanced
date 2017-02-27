@@ -34,12 +34,12 @@ public class MainAdditionalLessonTasks {
 //        Class<? extends Demo> demo = Demo.class;
 //        Demo demoObject = new Demo("Alex");
 //        //System.out.println("Write your class with package path");
-//        //Class<?> demo = Class.forName(new Scanner(System.in).nextLine());
+//        //Class<?> demo = Class.forName(new Controller(System.in).nextLine());
 //        try {
 //            System.out.println("Write field");
-//            Field field = demo.getDeclaredField(new Scanner(System.in).nextLine());
+//            Field field = demo.getDeclaredField(new Controller(System.in).nextLine());
 //            //System.out.println("Write method");
-//            //Method method = demo.getDeclaredMethod(new Scanner(System.in).nextLine());
+//            //Method method = demo.getDeclaredMethod(new Controller(System.in).nextLine());
 //            field.setAccessible(true);
 //            System.out.println(field.get(demoObject));
 //            //method.setAccessible(true);

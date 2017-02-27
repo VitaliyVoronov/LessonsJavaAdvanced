@@ -1,6 +1,6 @@
-package ua.itea.less09.my;
+package ua.itea.less09DesignPatterns.my;
 
-import ua.itea.less09.external.PixelPhoneFunction;
+import ua.itea.less09DesignPatterns.external.PixelPhoneFunction;
 
 /**
  * @author vitaliy

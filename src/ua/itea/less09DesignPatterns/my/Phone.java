@@ -1,4 +1,4 @@
-package ua.itea.less09.my;
+package ua.itea.less09DesignPatterns.my;
 
 /**
  * @author vitaliy

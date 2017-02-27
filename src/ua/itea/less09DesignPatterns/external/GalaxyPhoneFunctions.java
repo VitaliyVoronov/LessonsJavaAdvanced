@@ -1,4 +1,4 @@
-package ua.itea.less09.external;
+package ua.itea.less09DesignPatterns.external;
 
 
 /**
